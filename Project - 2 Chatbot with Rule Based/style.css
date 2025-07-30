@@ -1,0 +1,71 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef, #f6d365, #fda085);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.chat-container {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+}
+
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.user-msg {
+    text-align: right;
+    margin: 5px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.bot-msg {
+    text-align: left;
+    margin: 5px;
+    color: #e94e77;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 25%;
+    padding: 10px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff1493;
+}
